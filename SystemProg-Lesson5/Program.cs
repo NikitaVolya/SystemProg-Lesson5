@@ -39,8 +39,11 @@ namespace SystemProg_Lesson5
             Random random = new Random();
             List<int> numbers = Enumerable.Range(0, 10000).ToList();
 
-            int start = 10;
-            int end = 4123;
+            Console.Write("Enter start number: ");
+            int start = Convert.ToInt32(Console.ReadLine());
+
+            Console.Write("Enter end number: ");
+            int end = Convert.ToInt32(Console.ReadLine());
 
             Task<List<int>>[] rep =
             {
